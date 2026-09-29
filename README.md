@@ -1,89 +1,71 @@
 # Computer Vision Lab 4 — Edge Detection
 
-This project demonstrates **edge detection techniques in Python using OpenCV, NumPy, and Matplotlib**.
+This project implements and compares three edge detection techniques on a grayscale image using Python, OpenCV, NumPy, and Matplotlib.
 
-The program reads a grayscale image and compares three commonly used edge detection methods:
+## Objective
 
-- **Sobel Edge Detection**
-- **Prewitt Edge Detection**
-- **Canny Edge Detection**
+To detect and visualize image edges using the Sobel operator, Prewitt operator, and Canny edge detector.
 
-## 📌 Objective
+## Libraries Used
 
-To understand and implement different edge detection operators and visually compare the edges detected in a grayscale image.
-
-## 🛠️ Technologies Used
-
-- Python 3
 - OpenCV
 - NumPy
 - Matplotlib
 
-## 📂 Project Structure
+## Python Code
 
-```text
-cv_lab_4/
-├── edge_detection.py
-├── requirements.txt
-├── images2.jpg
-├── output/
-│   └── edge_detection_output.png
-└── README.md
-```
+The complete program is available in [edge_detection.py](edge_detection.py).
 
-## ⚙️ Installation
+## How It Works
 
-Install the required Python libraries:
+1. The input image is read in grayscale.
+2. Sobel filters calculate horizontal and vertical gradients.
+3. Prewitt kernels are applied to calculate image gradients.
+4. Canny edge detection is applied using thresholds 100 and 200.
+5. The original image and the three edge-detection results are displayed together.
+
+## Output
+
+### Edge Detection Comparison
+
+![Edge Detection Output](output/edge_detection_output.jpg)
+
+The output contains:
+- Original grayscale image
+- Sobel edge detection
+- Prewitt edge detection
+- Canny edge detection
+
+## Project Files
+
+| File | Description |
+|---|---|
+| [edge_detection.py](edge_detection.py) | Python implementation |
+| [requirements.txt](requirements.txt) | Required libraries |
+| [output/edge_detection_output.jpg](output/edge_detection_output.jpg) | Output image |
+| [README.md](README.md) | Project documentation |
+
+## Run Locally
+
+Install the required packages:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-## ▶️ How to Run
-
-1. Place the input image as `images2.jpg` in the project folder.
-2. Run the Python program:
+Run the program:
 
 ```bash
 python edge_detection.py
 ```
 
-3. A Matplotlib window will display the original grayscale image along with the Sobel, Prewitt, and Canny edge-detection results.
+This version uses a normal local image path and does **not** require Google Colab or Google Drive.
 
-> **Note:** The original lab code used a Google Colab path. This repository version uses the simpler local path `images2.jpg`, so it can be run directly after placing the image in the project folder.
+## Result
 
-## 🔍 Methods Used
+The program successfully demonstrates and compares Sobel, Prewitt, and Canny edge detection on a grayscale image.
 
-### 1. Sobel Edge Detection
-
-The Sobel operator calculates image intensity gradients in the horizontal and vertical directions. The two gradients are combined to highlight strong edges.
-
-### 2. Prewitt Edge Detection
-
-The Prewitt operator uses two 3×3 convolution kernels to detect horizontal and vertical intensity changes.
-
-### 3. Canny Edge Detection
-
-Canny is a multi-stage edge detector that uses gradient calculation, non-maximum suppression, double thresholding, and edge tracking to produce thin edges.
-
-## 📊 Output
-
-The program produces a comparison containing:
-
-1. Original grayscale image
-2. Sobel edge detection
-3. Prewitt edge detection
-4. Canny edge detection
-
-### Output Image
-
-![Edge Detection Output](output/edge_detection_output.png)
-
-## 🧪 Result
-
-The output shows how the three edge detection techniques identify boundaries and intensity changes in the image. Sobel and Prewitt use gradient-based convolution, while Canny produces a thin binary-style edge map after additional processing.
-
-## 👨‍💻 Author
+## Author
 
 **Vishnu Vardhan**
 

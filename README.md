@@ -25,6 +25,7 @@ The complete program is available in [edge_detection.py](edge_detection.py).
 5. The original image and the three edge-detection results are displayed together.
 
 ## Output
+<img width="1189" height="897" alt="image" src="https://github.com/user-attachments/assets/9a9b8ac4-a70a-4a1c-aeb0-54aae333154a" />
 
 ### Edge Detection Comparison
 
@@ -42,7 +43,6 @@ The output contains:
 |---|---|
 | [edge_detection.py](edge_detection.py) | Python implementation |
 | [requirements.txt](requirements.txt) | Required libraries |
-| [output/edge_detection_output.jpg](output/edge_detection_output.jpg) | Output image |
 | [README.md](README.md) | Project documentation |
 
 ## Run Locally
